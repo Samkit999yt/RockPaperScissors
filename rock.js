@@ -8,7 +8,6 @@ const compScorePara = document.querySelector("#comp-score");
 
 const drawGame = () => {
   // Draw Game
-  console.log("Game was Draw");
   msg.innerText = "Game was draw.Play Again.";
   msg.style.backgroundColor = "#081b31";
 };
@@ -17,13 +16,11 @@ const showWin = (userWin, userChoice, compChoice) => {
   if (userWin) {
     userScore++;
     userScorePara.innerText = userScore;
-    console.log("You Win!");
     msg.innerText = `You win! Your ${userChoice} beats ${compChoice}`;
     msg.style.backgroundColor = "Green";
   } else {
     compScore++;
     compScorePara.innerText = compScore;
-    console.log("You Lose!");
     msg.innerText = `You lost. ${compChoice} beats your ${userChoice}`;
     msg.style.backgroundColor = "Red";
   }
@@ -36,10 +33,8 @@ const genCompChoice = () => {
 };
 
 const playGame = (userChoice) => {
-  console.log("user choice = ", userChoice);
   //Generate Computer Choice
   const compChoice = genCompChoice();
-  console.log("Comp choice = ", compChoice);
 
   if (userChoice === compChoice) {
     drawGame();
