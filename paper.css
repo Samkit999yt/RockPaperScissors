@@ -5,6 +5,7 @@
 
 body {
     text-align: center;
+    height: 75vh;
 }
 
 .flex {
@@ -69,22 +70,36 @@ body {
     border-radius: 1rem;
 }
 
+.git{
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.git:active{
+    text-decoration: none;
+    color:#000000;
+}
+
+
 @media only screen and (max-width:767px) {
     .img {
-        height: 75px;
-        width: 75px;
+        height: 85px;
+        width: 85px;
     }
 
     .choice {
-        height: 90px;
-        width: 90px;
+        height: 100px;
+        width: 100px;
     }
 
     .msg {
         color: #fff;
         background-color: #081b31;
         display: inline;
-        font-size: 1rem;
+        font-size: 1.3rem;
         padding: 1rem;
         border-radius: 1rem;
     }
